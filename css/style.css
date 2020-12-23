@@ -39,6 +39,10 @@ a:hover,
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "Muli", sans-serif;
 }
@@ -81,7 +85,8 @@ p {
   -webkit-border-radius: 0px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  box-shadow: 0px 3px 20px 0px #F98169 !important;
+  box-shadow: 0px 3px 10px 0px #F98169 !important;
+  cursor: pointer !important;
 }
 
 .btn-outline-ash {
@@ -95,6 +100,10 @@ p {
   -moz-border-radius: 30px;
   border-radius: 30px;
 
+}
+
+a.btn-outline-ash:hover {
+  color: #0B314B;
 }
 
 .header_search {
@@ -242,13 +251,13 @@ h3 {
 }
 
 /* button style */
-/* .owl-carousel .owl-nav div {
+.owl-carousel .owl-nav div {
   background: transparent;
-  height: 50px;
+  height: 80px;
   left: 0px;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -256,44 +265,36 @@ h3 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 50px;
-  color: #fff;
-  background-color: transparent;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  color: #FF9800;
   left: 50px;
-  font-size: 15px;
   line-height: 50px;
-  border: 1px solid #787878;
-  left: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .owl-carousel .owl-nav div.owl-next {
   left: auto;
-  right: 150px;
+  right: 10px;
 }
 
-.owl-carousel .owl-nav div.owl-next i {
+.owl-carousel .owl-nav div.owl-next p {
   position: relative;
   right: 0;
+  font-size: 20px;
+
 }
 
-.owl-carousel .owl-nav div.owl-prev i {
+.owl-carousel .owl-nav div.owl-prev p {
   position: relative;
   top: 0px;
+  font-size: 20px;
+
 }
 
 .owl-carousel:hover .owl-nav div {
   opacity: 1;
   visibility: visible;
 }
-
-.owl-carousel:hover .owl-nav div:hover {
-  color: #fff;
-  background: #615CFD;
-  border: 1px solid transparent;
-} */
-
 
 .section_title span {
   position: relative;
@@ -814,11 +815,6 @@ h3 {
   margin-bottom: 0;
 }
 
-.slider_area .single_slider .slider-logo {
-  text-align: center;
-  margin-bottom: 15%;
-}
-
 .slider_area .single_slider .slider_text h6 {
   color: #F98169;
   font-family: "Muli", sans-serif;
@@ -871,6 +867,13 @@ h3 {
 .shop-product-content {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  grid-gap: 25px;
+  overflow-x: hidden;
+}
+
+.recipe-product-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 25px;
   overflow-x: hidden;
 }
@@ -1160,8 +1163,6 @@ h3 {
     min-width: 97px;
     }
 
-    /* .shop-product-content_inner.slide-1 .shop-descript {
-      padding: 5px 30px 5px 5px; } */
       .shop-product-content_inner.slide-1 .shop-descript {
         padding: 5px; } 
     
@@ -1170,21 +1171,6 @@ h3 {
           padding: 5px; } }
     .shop-product-content_inner.slide-1:last-of-type {
       margin-bottom: 0; }
-
- .btns {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
- }
-
- .customNextBtn, .customPrevBtn {
-   float: right;
-   background: transparent;
-   color: #FF9800;
-   padding: 10px;
-   margin-left: 5px;
-   cursor: pointer;
- }
 
 /* About Page */
  .about-section p{
@@ -1297,7 +1283,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* line 34, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_slider.scss */
 .social_links--product li a {
   width: 30px;
   height: 30px;
@@ -1361,7 +1346,7 @@ h3 {
  
 
 .product_count {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
    }
   .product_count label {
@@ -1404,7 +1389,8 @@ h3 {
   padding: 0 5px;
   overflow-y: auto;
 }
-.review_inner {
+.review_inner,
+.recipe_inner {
   padding: 30px;
   background: white;
   -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, 0.1);
@@ -1416,7 +1402,8 @@ h3 {
   position: relative; 
   margin-bottom: 20px;
 }
-.review_inner .review-img {
+.review_inner .review-img,
+.recipe_inner{
   /* height: 50px; */
   resize: cover;
 }
@@ -1425,10 +1412,12 @@ h3 {
   border-radius: 50%;
   }
 
-.review_inner .review-text {
+.review_inner .review-text,
+.recipe_inner .recipe-text {
   margin-left: 10px;
 
 }
+
 .review_inner .review-text *:last-child {
   margin-bottom: 0; }
 .review_inner .review-text h3 {
@@ -1437,10 +1426,15 @@ h3 {
 
   .feedbacks__review {
     border: 1px solid #F98169;
-    /* max-width: 400px; */
-    /* min-width: 00px; */
-   
+    width: 100%;
   }
+
+  @media(min-width: 900px) {
+    .feedbacks__review {
+      width: 400px;
+    }
+  }
+
   .feedbacks__review--content {
     padding: 25px;
   }
@@ -1530,43 +1524,6 @@ h3 {
   animation-fill-mode: both;
   transition: ease-in-out;
 }
-/* 
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.transition-fade {
-  opacity: 1;
-  transition: 500ms;
-  transform: translateX(0);
-  transform-origin: left;
-}
-
-html.is-animating .transition-fade {
-  opacity: 1;
-  transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-  opacity: 0;
-  transform: translateX(0);
-}
-
-.transition-swipe {
-  transition: 500ms;
-  transform: translateY(0);
-}
-
-html.is-animating .transition-swipe {
-  transform: translateY(100px);
-} */
 
 
 @keyframes slider {
@@ -1599,7 +1556,7 @@ html.is-animating .transition-swipe {
 }
 
 .grid-container {
-  width:40vw;
+  width: 100%;
   gap: 2px;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
@@ -1614,26 +1571,177 @@ html.is-animating .transition-swipe {
     "Image-3 Image-3 Image-6 Image-6";
 }
 
-/* .Image-1 { grid-area: Image-1; }
 
-.Image-2 { grid-area: Image-2; }
 
-.Image-3 { grid-area: Image-3; }
+.grid-container div {
+  width: 100%;
+  height: 100%;
+}
+.Image-1 { 
+  grid-area: Image-1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+        
+}
 
-.image-4 { grid-area: image-4; }
+.Image-2 { grid-area: Image-2; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
-.Image-5 { grid-area: Image-5;}
+.Image-3 { grid-area: Image-3; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
-.Image-6 { grid-area: Image-6; } */
+.image-4 { grid-area: image-4; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
-.Image-1 { grid-area: Image-1; background: red}
+.Image-5 { grid-area: Image-5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
-.Image-2 { grid-area: Image-2; background: green}
+.Image-6 { grid-area: Image-6; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
-.Image-3 { grid-area: Image-3; background: yellow}
+.Image-1 {
+  background-image: url(../images/img-4.png);
+}
 
-.image-4 { grid-area: image-4; background: orange }
 
-.Image-5 { grid-area: Image-5;background: blue }
+/* recipe */
+.recipe_inner {
+ display: block;
+}
+@media(min-width: 800px ) {
+  .recipe_inner {
+    display: flex;
+   }
+  
+}
 
-.Image-6 { grid-area: Image-6; background: indigo}
+.recipe-carousel .recipe_inner .recipe-text {
+  margin-left: 30px;
+  color: #263238;
+  display: block;
+}
+@media(max-width:500px ) {
+  .recipe-carousel .recipe_inner .recipe-text {
+    margin-left: 0px;
+  }
+}
+@media(min-width: 850px ) {
+  .recipe-carousel .recipe_inner .recipe-text {
+    display: flex;
+  }
+}
+
+
+.recipe-carousel .recipe_inner .recipe-text .recipe-left-icon {
+  display: block;
+}
+
+@media(min-width: 800px ) {
+  .recipe-carousel .recipe_inner .recipe-text .recipe-left-icon {
+    display: flex;
+  }
+}
+
+.recipe-carousel .recipe_inner .recipe-text .recipe-left>span{
+  color: #FF9800;
+}
+
+.recipe-carousel .recipe_inner .recipe-text .recipe-left>h2{
+  font-weight: bolder;
+  padding: 10px 10px 20px 0;
+}
+
+.recipe-carousel .recipe_inner .recipe-text .recipe-left span>img{
+  width: 30px !important;
+  display: inline;
+
+}
+
+
+
+.recipe-carousel .recipe_inner .recipe-text .recipe-right {
+  display: block;
+}
+
+@media(min-width: 800px ) {
+  .recipe-carousel .recipe_inner .recipe-text .recipe-right {
+    display: flex;
+  }
+}
+
+.recipe-share-btn {
+  margin: 5px!important; 
+}
+
+.recipe-share-btn img{
+ position: relative !important;
+  width: 60% !important;
+  top: 25% !important;
+  left: 25% !important;
+}
+
+.recipe-share-btn .btn-share {
+  background: #263238;
+  border-radius: 50%;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.recipe-share-btn .btn-share:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.recipe-share-btn .btn-bookmark {
+  background: #FF9800;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.recipe-carousel .owl-dots {
+  /* width: 50%; */
+  text-align: center; 
+
+  }
+  .recipe-carousel .owl-dots .owl-dot {
+    display: inline-block; 
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
+.recipe-carousel .owl-dots .owl-dot > span {
+  margin: 7px;
+  background: #FF9800;
+  opacity: 0.4;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+
+}
+
+.recipe-carousel .owl-dots .owl-dot:hover > span {
+  background: #FF9800; 
+}
+
+.recipe-carousel .owl-dots .owl-dot.active > span {
+  background: #FF9800; 
+  opacity: 1.0;
+  border-radius: 30px !important;
+  -webkit-transition: 0.5s all ease-in-out !important;
+  -o-transition: 0.5s all ease-in-out !important;
+  transition: 0.5s all ease-in-out !important;
+}

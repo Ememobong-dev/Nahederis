@@ -30,37 +30,47 @@ if(menu.length){
 
 
 // Shop top product
-var owl = $('.owl-carousel');
-  owl.owlCarousel({
-  items: 1,
-  margin: 0,
-  loop: true,
-  dots: true,
-  autoplay: true,
-  autoplayTimeout: 5500, // Autoplay Timeout 1s = 1000ms
-  smartSpeed: 1000,
-  nav: false,
-  navText: ['Prev', 'Next']
-});
+// var owl = $('.owl-carousel');
+//   owl.owlCarousel({
+//   items: 1,
+//   margin: 0,
+//   loop: true,
+//   dots: true,
+//   autoplay: true,
+//   autoplayTimeout: 5500,
+//   smartSpeed: 1000,
+//   nav: true,
+//   navText: ['<p>Prev</p> ', '<p>Next</p>']
+// });
 
-// custom Button carousel
-$('.customNextBtn').click(function() {
-  owl.trigger('next.owl.carousel');
-});
-$('.customPrevBtn').click(function() {
-  owl.trigger('prev.owl.carousel');
-});
+ 
+$('.world-catagory-slider2').owlCarousel({
+    items: 1,
+    margin: 3,
+    loop: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5500,
+    smartSpeed: 1000,
+    nav: true,
+    navText: ['<p>Prev</p> ', '<p>Next</p>']
+  });
+
+// Recipe carousel
+
+  $('.recipe-carousel').owlCarousel({
+    items: 1,
+    margin: 5,
+    loop: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 5500,
+    smartSpeed: 1000,
+    nav: false,
+    navText: ['<p>Prev</p> ', '<p>Next</p>']
+  });
 
 
-
-
-// Grid container
-$('#photos-container').masonry({
-      itemSelector:'.item',
-      columnWidth:70
-    });
-
-  
 });
 
 

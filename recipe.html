@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=muli">
+  
+
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -31,7 +33,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <!-- <img src="images/logo.png" width="" alt=""> -->
+                                    <img src="img/logo.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -40,8 +42,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="index.html">home</a></li>
-                                        <li><a href="recipe.html">Recipe</a></li>
-                                        <li><a class="active" href="shop.html">Shop</a></li>
+                                        <li><a class="active" href="recipe.html">Recipe</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
                                         <li><a href="about.html">About Us</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
@@ -65,148 +67,43 @@
         </div>
     </header>
     <!-- header-end -->
- 
-    <!-- single product -->
-    <section class="page-section">
-        <div class="left-box">
-            <img src="images/logo.png" alt="" class="img-fluid">
-            <div class="arrow-back">
-                 <a href="shop.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
-            </div>
-            <div class="social_links--product">
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_2">
+            <div class="social_links">
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f    "></i> </a></li>
                     <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
                     <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
                 </ul>
             </div>
-        </div>
-        <div class="container">
-            <div class="single_product_inner">
-                <div class="product_image_area">
-                    <div class="container">
-                        <div class="row s_product_inner">
-                            <div class="col-lg-6">
-                                <div class=".s_product_img">
-                                    <img class="img-fluid" src="images/single-img.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="s_product_text">
-                                    <h3>Ham Sandwich</h3>
-                                    <h2>$149.99/serving</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet incidunt aut odit, facilis beatae sit fugit sed esse id, asperiores, explicabo provident. Vitae optio, odit expedita culpa rem minus.</p>
-                                    <div class="d-flex  align-items-center">
-                                        <div class="product_count mr-3">
-                                            <div class="qty-icon">
-                                                <span for="qty"> <img src="images/icon_catergoria.png" alt="" class="img-fluid"> Servings </span>
-                                            </div>
-                                            <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            class="increase items-count" type="button"><i class="fa fa-chevron-up"></i></button>
-                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            class="reduced items-count" type="button"><i class="fa fa-chevron-down"></i></button>
-                                        </div>
-                                        <div class=" ">
-                                            <a name="" id="" class="btn btn-singleOrder" href="#" role="button">Place Order</a>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-6 offset-xl-6 slider-contentTwo">
+                        <div class="slider-logo">
+                            <img src="images/logo.png" alt="" class="img-fluid">
                         </div>
-                    </div>
-                </div>
-                <!--================End Single Product Area =================-->
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews p-150">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="review-content">
-                        <div class="review_inner d-flex ">
-                            <div class="review-img">
-                              <img src="images/img-2.png" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
-                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                        <div class="review_inner d-flex">
-                            <div class="review-img">
-                              <img src="images/img-2.png" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
-                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                        <div class="review_inner d-flex">
-                            <div class="review-img">
-                              <img src="images/img-2.png" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
-                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                        <div class="review_inner d-flex">
-                            <div class="review-img">
-                              <img src="images/img-2.png" alt="Image" class="img-fluid">
-                            </div>
-                            <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
-                              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feedbacks__review">
-                        <div class="feedbacks__review--content">
-                            <div class="review--header">
-                                <img src="images/logo.png" alt="" class="img-fluid">
-                                <h6 class="text-center mt-2 mb-4">Please drop a review</h6>
-                            </div>
+                        <div class="slider_text text-center">
                             <form action="" method="post">
-                                <div class="form-group">
-                                    <input type="text" name="" id="" class="form-control" placeholder="Name" >
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="" id="" class="form-control" placeholder="Email" >
-                                </div>
-                                <div class="form-group">
-                                  <textarea class="form-control" name="" id="" placeholder="Message" rows="4"></textarea>
-                                </div>
-                                <div class="rating-star mt-2 text-center">
-                                    <span>Ratings</span>
-                                    <div class="stars">
-                                        <i class="fas fa-star    "></i>
-                                        <i class="fas fa-star    "></i>
-                                        <i class="fas fa-star    "></i>
-                                        <i class="fas fa-star    "></i>
-                                        <i class="fas fa-star    "></i>
-                                    </div>
-                                </div>
-                                <div class="submit-btn  mt-5 text-center">
-                                    <button type="submit" class="btn btn-lg btn-singleOrder">Submit</button>
+                                <div class="header_search search_widget">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search Meal" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Meal '">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button> 
+                                        </span>
+                                        <button type="submit" class="btn btn-icon"><img src="images/filter.png" alt=""></button>
+                                    </div><!-- /input-group -->
                                 </div>
                             </form>
-                            
+                            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, asperiores.</p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
+            
         </div>
-
-    </section>
-
+    </div>
 
     <section class="shop-section p-100">
         <div class="container">
@@ -585,12 +482,366 @@
 
                         </div>
                     </div>
-
+                    <!-- end of all slide -->
                 </div>
             </div>
         </div>
     </section>
+    
 
+        <section class="recipe-section">
+            <div class="container">
+                <h3>Top Recipes</h3>
+                <div class="recipe-carousel owl-carousel">
+                    <div class="recipe_inner ">
+                        <div class="recipe-img">
+                            <img src="images/img-2.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="recipe-text">
+                            <div class="recipe-left">
+                                <span class="mr-3 ">Rise</span>
+                                <h2>Goan Style Vegetable Curry With  Kitchari</h2>
+                                <div class="recipe-descript">
+                                    <p>Eat all 5 of your 5-a-day in one delicious curry, served with brown rice and lentils. It's healthy, vegan, gluten-free and provides vitamin C and iron, too.</p>
+                                </div>
+                                <div class="recipe-left-icon">
+                                    <div class="time m-3 ">
+                                        <span><img src="images/clock.png"  class="img-fluid" alt="icon-clock"></span> 
+                                        <span>Prep:10 mins</span> <br class=" d-xl-block"> 
+                                        <span class="">Cook:30 mins</span>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/flag.png" class="img-fluid" alt="icon-flag"></span> 
+                                        <span>Easy</span> <br>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/icon_catergoria.png" class="img-fluid" alt="icon-servings"></span> 
+                                        <span>4 Servings</span> <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipe-right">
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a>
+                                </span>
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="recipe_inner ">
+                        <div class="recipe-img">
+                            <img src="images/img-2.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="recipe-text">
+                            <div class="recipe-left">
+                                <span class="mr-3 ">Rise</span>
+                                <h2>Goan Style Vegetable Curry With  Kitchari</h2>
+                                <div class="recipe-descript">
+                                    <p>Eat all 5 of your 5-a-day in one delicious curry, served with brown rice and lentils. It's healthy, vegan, gluten-free and provides vitamin C and iron, too.</p>
+                                </div>
+                                <div class="recipe-left-icon">
+                                    <div class="time m-3 ">
+                                        <span><img src="images/clock.png"  class="img-fluid" alt="icon-clock"></span> 
+                                        <span>Prep:10 mins</span> <br class=" d-xl-block"> 
+                                        <span class="">Cook:30 mins</span>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/flag.png" class="img-fluid" alt="icon-flag"></span> 
+                                        <span>Easy</span> <br>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/icon_catergoria.png" class="img-fluid" alt="icon-servings"></span> 
+                                        <span>4 Servings</span> <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipe-right">
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a>
+                                </span>
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="recipe_inner ">
+                        <div class="recipe-img">
+                            <img src="images/img-2.png" alt="Image" class="img-fluid">
+                        </div>
+                        <div class="recipe-text">
+                            <div class="recipe-left">
+                                <span class="mr-3 ">Rise</span>
+                                <h2>Goan Style Vegetable Curry With  Kitchari</h2>
+                                <div class="recipe-descript">
+                                    <p>Eat all 5 of your 5-a-day in one delicious curry, served with brown rice and lentils. It's healthy, vegan, gluten-free and provides vitamin C and iron, too.</p>
+                                </div>
+                                <div class="recipe-left-icon">
+                                    <div class="time m-3 ">
+                                        <span><img src="images/clock.png"  class="img-fluid" alt="icon-clock"></span> 
+                                        <span>Prep:10 mins</span> <br class=" d-xl-block"> 
+                                        <span class="">Cook:30 mins</span>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/flag.png" class="img-fluid" alt="icon-flag"></span> 
+                                        <span>Easy</span> <br>
+                                    </div>
+                                    <div class="flag m-3">
+                                        <span><img src="images/icon_catergoria.png" class="img-fluid" alt="icon-servings"></span> 
+                                        <span>4 Servings</span> <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipe-right">
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a>
+                                </span>
+                                <span class="recipe-share-btn">
+                                    <a name="" id="" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 top-product">
+            <div class="container-fluid">
+                <div class="section-title">
+                    <h5 class="text-capitalize">top products</h5>
+                </div>
+                <div class="top-product-content">
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-5.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-product-content_inner slide-1 align-items-center mb-1">
+                        <!-- img-container -->
+                        <div class="img-container">
+                            <a href="singlePage.html"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
+                            
+                        </div>
+                        <!-- shop-text -->
+                        <div class="shop-descript">
+                            <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                <h5 class="store-item-price">$10.50</h5>
+                            </div>
+                            <!-- Post Meta -->
+                            <div class="shop-text">
+                                <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+            </div>
+    </section>
+    <!-- slider_area_end -->
+
+
+   
 
 
     <section class="py-5 coming-soon">
