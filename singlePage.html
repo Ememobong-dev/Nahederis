@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.0.1/css/fontawesome-all.css">
-    
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
@@ -31,7 +30,7 @@
                         <div class="col-xl-3 col-lg-2">
                             <div class="logo">
                                 <a href="index.html">
-                                    <!-- <img src="images/logo.png" width="" alt=""> -->
+                                    <img src="img/logo.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -96,18 +95,16 @@
                                     <h3>Ham Sandwich</h3>
                                     <h2>$149.99/serving</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet incidunt aut odit, facilis beatae sit fugit sed esse id, asperiores, explicabo provident. Vitae optio, odit expedita culpa rem minus.</p>
-                                    <div class="d-flex  align-items-center">
+                                    <div class="d-sm-block d-md-flex d-xl-flex  align-items-center">
                                         <div class="product_count mr-3">
-                                            <div class="qty-icon">
-                                                <span for="qty"> <img src="images/icon_catergoria.png" alt="" class="img-fluid"> Servings </span>
-                                            </div>
-                                            <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
-                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                            class="increase items-count" type="button"><i class="fa fa-chevron-up"></i></button>
-                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                            class="reduced items-count" type="button"><i class="fa fa-chevron-down"></i></button>
+                                            <div class="qty-icon text-center mb-2">
+                                                <span> <img src="images/icon_catergoria.png" width="23px" alt="" class="img-fluid"> Servings </span>
+                                           </div>
+                                            <button id="sub">-</button>
+                                            <input type="text" name="" id="qtyBox" readonly="" value="0">
+                                            <button id="add">+</button>
                                         </div>
-                                        <div class=" ">
+                                        <div class=" mt-4">
                                             <a name="" id="" class="btn btn-singleOrder" href="#" role="button">Place Order</a>
                                         </div>
                                     </div>
@@ -223,7 +220,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -241,7 +238,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -259,7 +256,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -277,7 +274,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -295,7 +292,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -313,7 +310,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -331,7 +328,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -350,7 +347,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -368,7 +365,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -386,7 +383,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -410,7 +407,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -428,7 +425,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -446,7 +443,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -464,7 +461,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -483,7 +480,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -501,7 +498,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -519,7 +516,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -537,7 +534,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -555,7 +552,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -572,7 +569,7 @@
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
-                                    <div class=" d-flex d-flex justify-content-between align-items-center text-capitalize">
+                                    <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
                                         <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
@@ -624,10 +621,10 @@
                     <div class="col-xl-6 col-md-6">
                         <div class="footer-right">
                             <div class="menu_links">
-                                <ul>
-                                    <li><a href="#">Recipes</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                               <ul>
+                                    <li><a href="recipe.html">Recipes</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                             <div class="socail_links">
