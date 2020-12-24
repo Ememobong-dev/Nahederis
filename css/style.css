@@ -1361,10 +1361,18 @@ margin-bottom: 70px;
 .product_count input {
   border-radius: 10px;
   outline: none;
-  padding: 3px 0 !important;
+  padding: 3px 0 ;
   text-align: center;
   font-size: 0.8em;
   margin: 0 10px;
+}
+
+@media(max-width: 900px) {
+  .product_count input {
+    padding: 5px 0 ;
+    font-size: 0.8em;
+    margin: 0 3px;
+  }
 }
 
 
