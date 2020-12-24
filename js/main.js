@@ -3,7 +3,7 @@
 // TOP Menu Sticky
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
-	if (scroll < 400) {
+	if (scroll < 300) {
     $("#sticky-header").removeClass("sticky");
     $('#back-top').fadeIn(500);
 	} else {
@@ -46,7 +46,7 @@ if(menu.length){
  
 $('.world-catagory-slider2').owlCarousel({
     items: 1,
-    margin: 3,
+    margin: 20,
     loop: true,
     dots: true,
     autoplay: true,
@@ -60,7 +60,7 @@ $('.world-catagory-slider2').owlCarousel({
 
   $('.recipe-carousel').owlCarousel({
     items: 1,
-    margin: 5,
+    margin: 15,
     loop: true,
     dots: true,
     autoplay: true,
@@ -70,6 +70,25 @@ $('.world-catagory-slider2').owlCarousel({
     navText: ['<p>Prev</p> ', '<p>Next</p>']
   });
 
+  let addBtn = document.querySelector('#add');
+  let subBtn = document.querySelector('#sub');
+  let qtyBox = document.querySelector('#qtyBox');
+
+  console.log(addBtn, subBtn, qtyBox);
+
+  addBtn.addEventListener('click', ()=> {
+    qtyBox.value = parseInt(qtyBox.value) + 1;
+  });
+
+  subBtn.addEventListener('click', ()=> {
+    if (qtyBox.value <= 0) {
+        qtyBox.value = 0;
+    }
+    else {
+      qtyBox.value = parseInt(qtyBox.value) - 1;
+    }
+    
+  });
 
 });
 
