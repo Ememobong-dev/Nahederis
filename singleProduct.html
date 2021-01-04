@@ -66,13 +66,13 @@
     <!-- header-end -->
  
     <!-- single product -->
-    <section class="page-section">
+    <section class="page-section d-md-flex d-sm-block">
         <div class="left-box">
             <img src="images/logo.png" alt="" class="img-fluid">
             <div class="arrow-back">
                  <a href="shop.html"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
             </div>
-            <div class="social_links--product">
+            <div class="social_links--product d-none d-md-block">
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f    "></i> </a></li>
                     <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
@@ -86,7 +86,7 @@
                     <div class="container">
                         <div class="row s_product_inner">
                             <div class="col-lg-6">
-                                <div class=".s_product_img">
+                                <div class="s_product_img">
                                     <img class="img-fluid" src="images/single-img.png" alt="">
                                 </div>
                             </div>
@@ -96,13 +96,20 @@
                                     <h2>$149.99/serving</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet incidunt aut odit, facilis beatae sit fugit sed esse id, asperiores, explicabo provident. Vitae optio, odit expedita culpa rem minus.</p>
                                     <div class="d-sm-block d-md-flex d-xl-flex  align-items-center">
-                                        <div class="product_count mr-3">
-                                            <div class="qty-icon text-center mb-2">
+                                        <div class=" product-count mr-3">
+                                            <div class="qty-icon mb-2">
                                                 <span> <img src="images/icon_catergoria.png" width="23px" alt="" class="img-fluid"> Servings </span>
                                            </div>
-                                            <button id="sub">-</button>
-                                            <input type="text" name="" id="qtyBox" readonly="" value="0">
-                                            <button id="add">+</button>
+                                           <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" id="sub">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" name="" id="qtyBox" readonly="" value="0">
+                                                <span class="input-group-btn">
+                                                    
+                                                    <button class="btn btn-default-add" id="add">+</button>
+                                                </span>
+                                            </div>
                                         </div>
                                         <div class=" mt-4">
                                             <a name="" id="" class="btn btn-singleOrder" href="#" role="button">Place Order</a>
@@ -119,6 +126,8 @@
         </div>
     </section>
 
+    <!--================ Review =================-->
+
     <section class="reviews p-150">
         <div class="container">
             <div class="row">
@@ -129,7 +138,7 @@
                               <img src="images/img-2.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
+                              <div class="reviewer d-flex"><span class="mr-3">Jennifer Casual</span> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
                               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                             </div>
                         </div>
@@ -138,7 +147,7 @@
                               <img src="images/img-2.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
+                              <div class="reviewer d-flex"><span class="mr-3">Jennifer Casual</span> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
                               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                             </div>
                         </div>
@@ -147,7 +156,7 @@
                               <img src="images/img-2.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
+                              <div class="reviewer d-flex"><span class="mr-3">Jennifer Casual</span> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
                               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                             </div>
                         </div>
@@ -156,7 +165,7 @@
                               <img src="images/img-2.png" alt="Image" class="img-fluid">
                             </div>
                             <div class="review-text">
-                              <div class="reviewer d-flex"><h3 class="mr-3">Jennifer Casual</h3> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
+                              <div class="reviewer d-flex"><span class="mr-3">Jennifer Casual</span> <i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></div>
                               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                             </div>
                         </div>
@@ -189,7 +198,7 @@
                                         <i class="fas fa-star    "></i>
                                     </div>
                                 </div>
-                                <div class="submit-btn  mt-5 text-center">
+                                <div class="submit-btn mt-5 text-center">
                                     <button type="submit" class="btn btn-lg btn-singleOrder">Submit</button>
                                 </div>
                             </form>
@@ -208,133 +217,133 @@
     <section class="shop-section p-100">
         <div class="container">
             <div class="row">
-                <div class="world-catagory-slider2 owl-carousel">
+                <div class="shop-section-slider owl-carousel">
                     <!-- ========= Single Catagory Slide ========= -->
                     <div class="single-cata-slide">
                         <div class="shop-product-content">
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
+                                    <a href="singleProduct.html"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="singleProduct.html"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-5.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-5.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -342,54 +351,54 @@
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -402,72 +411,72 @@
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-5.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-5.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -475,107 +484,107 @@
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-1.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-6.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-7.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-2.png" class="img-fluid" alt=""> </a>
                                     
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="shop-product-content_inner slide-1 align-items-center mb-1">
                                 <!-- img-container -->
                                 <div class="img-container">
-                                    <a href="singlePage.html"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
+                                    <a href="#"><img src="images/tp-3.png" class="img-fluid" alt=""> </a>
                                 </div>
                                 <!-- shop-text -->
                                 <div class="shop-descript">
                                     <div class=" d-sm-block d-md-flex d-xl-flex justify-content-between align-items-center text-capitalize">
-                                        <span id="store-item-name"><a href="singlePage.html"> Ham Sandwich</a></span>
+                                        <span id="store-item-name"><a href="#"> Ham Sandwich</a></span>
                                         <h5 class="store-item-price">$10.50</h5>
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="singlePage.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -614,20 +623,20 @@
         <div class="footer_top">
             <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 col-md-6 footer-left">
+                    <div class="col-md-7 footer-left">
                         <img src="images/logo.png" class="img-fluid footer-logo" alt="">
                         <p> In possimus, hi incidunt pariatur tempore maiores illo doloribus In possimus, hi incidunt pariatur tempore quam omnis assumenda doloremque iusto corporis molestiae. Provident, perspiciatis?</p>
                     </div>
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-md-5">
                         <div class="footer-right">
-                            <div class="menu_links">
+                            <div class="menu_links text-center">
                                <ul>
                                     <li><a href="recipe.html">Recipes</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
-                            <div class="socail_links">
+                            <div class="social_links">
                                 <ul>
                                     <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
                                     <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
