@@ -687,10 +687,11 @@
                                     <button class="btn btn-share share-button" type="button" title="Share this recipe">
                                         <img src="images/share.png" alt="" class="img-fluid">
                                       </button>
-                                    <!-- <a name="" id="share-button" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a> -->
                                 </span>
                                 <span class="recipe-share-btn">
-                                    <a name="" id="bookmarkpage" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                    <button class="btn btn-share btn-bookmark" type="button" title="Share this recipe">
+                                        <img src="images/bookmark.png" alt="" class="img-fluid">
+                                      </button>
                                 </span>
                             </div>
                         </div>
@@ -725,10 +726,14 @@
                             </div>
                             <div class="recipe-right">
                                 <span class="recipe-share-btn">
-                                    <a name="" id="" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a>
+                                    <button class="btn btn-share share-button" type="button" title="Share this recipe">
+                                        <img src="images/share.png" alt="" class="img-fluid">
+                                      </button>
                                 </span>
                                 <span class="recipe-share-btn">
-                                    <a name="" id="" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                    <button class="btn btn-share btn-bookmark" type="button" title="Share this recipe">
+                                        <img src="images/bookmark.png" alt="" class="img-fluid">
+                                      </button>
                                 </span>
                             </div>
                         </div>
@@ -763,12 +768,17 @@
                             </div>
                             <div class="recipe-right">
                                 <span class="recipe-share-btn">
-                                    <a name="" id="" class="btn btn-share" href="#" role="button"><img src="images/share.png" alt="" class="img-fluid"></a>
+                                    <button class="btn btn-share share-button" type="button" title="Share this recipe">
+                                        <img src="images/share.png" alt="" class="img-fluid">
+                                      </button>
                                 </span>
                                 <span class="recipe-share-btn">
-                                    <a name="" id="" class="btn btn-bookmark" href="#" role="button"><img src="images/bookmark.png" alt="" class="img-fluid"></a>
+                                    <button class="btn btn-share btn-bookmark" type="button" title="Share this recipe">
+                                        <img src="images/bookmark.png" alt="" class="img-fluid">
+                                      </button>
                                 </span>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -993,7 +1003,47 @@
 
     </section>
 
- 
+
+    <!-- trial -->
+    <div class="share-dialog">
+        <header>
+          <h3 class="dialog-title">Share this recipe</h3>
+          <button class="close-button"><svg><use href="#close"></use></svg></button>
+        </header>
+        <div class="targets">
+          <a class="button">
+            <svg>
+              <use href="#facebook"></use>
+            </svg>
+            <span>Facebook</span>
+          </a>
+          
+          <a class="button">
+            <svg>
+              <use href="#twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+          
+          <a class="button">
+            <svg>
+              <use href="#whatsapp"></use>
+            </svg>
+            <span>Whatsapp</span>
+          </a>
+          
+          <a class="button">
+            <svg>
+              <use href="#email"></use>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+        <div class="link">
+          <div class="pen-url"></div>
+          <button class="copy-link">Copy Link</button>
+        </div>
+    </div>
 
     <!-- footer start -->
     <footer class="footer">

@@ -101,28 +101,35 @@
     });
 
 });
-      // Share Button
-      const shareButton = document.querySelector('.share-button');
-      console.log(shareButton);
+      //Web Share Api Button
+      const shareDialog = document.querySelector('.share-dialog');
+      const closeButton = document.querySelector('.close-button');
+      const penUrl = document.querySelector('.pen-url');
+
+      closeButton.addEventListener('click', event => {
+        shareDialog.classList.remove('is-open');
+      });
+
+      penUrl.innerHTML = window.document.location.href;
 
       const title = window.document.title;
       const url = window.document.location.href;
 
-      shareButton.addEventListener('click', _event => {
-        if (navigator.share) {
-          navigator.share({
-            title: `${title} `,
-            url: `${url}`,
-          }).then(() => {
-          console.log('Thanks for sharing our awesome recipe!');
-          })
-          .catch(console.error);
-        }
-        else {
-          // shareDialog.classList.add('is-open');
-        }
-     });
-
-
+      document.querySelectorAll('.share-button').forEach(item => {
+        item.addEventListener('click', Event => {
+          if (navigator.share) {
+            navigator.share({
+              title: `${title} `,
+              url: `${url}`,
+            }).then(() => {
+            console.log('Thanks for sharing our awesome recipe!');
+            })
+            .catch(console.error);
+          }
+          else {
+            shareDialog.classList.add('is-open');
+          }
+        });
+      });
 
 })(jQuery);	
