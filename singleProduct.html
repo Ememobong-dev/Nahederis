@@ -1,69 +1,54 @@
 <!doctype html>
-<html >
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Nahedris Foods</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://nahedrisfoods.com/images/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=muli">
-
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.0.1/css/fontawesome-all.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-2">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-7">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="recipe.html">Recipe</a></li>
-                                        <li><a class="active" href="shop.html">Shop</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                            <div class="download__menu">
-                                <div class="book_btn d-none d-lg-block">
-                                    <a  href="#" download="">Download Menu</a>
+        <!--Header Menu Area -->
+        <header class="header_area">
+            <div class="main_menu" id="sticky-header">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav navbar-right ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="recipe.html">Recipe</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="shop.html">Shop</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right ml-auto">
+                                <div class="download__menu">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a  href="images/Nahedris Menu/1.jpg" download="">Download Menu</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
+                            </ul>
+                        </div> 
                     </div>
-
-                </div>
+                </nav>
             </div>
-        </div>
-    </header>
-    <!-- header-end -->
+        </header>
+        <!--Header Menu Area -->
  
     <!-- single product -->
     <section class="page-section d-md-flex d-sm-block">
@@ -75,12 +60,12 @@
             <div class="social_links--product d-none d-md-block">
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f    "></i> </a></li>
-                    <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                    <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                    
+                    <li><a href="https://instagram.com/nahedrisfoods?igshid=1g3t80g85xw5s"> <i class="fab fa-instagram"></i> </a></li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container mt-5">
             <div class="single_product_inner">
                 <div class="product_image_area">
                     <div class="container">
@@ -93,10 +78,10 @@
                             <div class="col-lg-6">
                                 <div class="s_product_text">
                                     <h3>Ham Sandwich</h3>
-                                    <h2>$149.99/serving</h2>
+                                    <h2>$149.99</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic amet incidunt aut odit, facilis beatae sit fugit sed esse id, asperiores, explicabo provident. Vitae optio, odit expedita culpa rem minus.</p>
                                     <div class="d-sm-block d-md-flex d-xl-flex  align-items-center">
-                                        <div class=" product-count mr-3">
+                                        <div class="product-count mr-3">
                                             <div class="qty-icon mb-2">
                                                 <span> <img src="images/icon_catergoria.png" width="23px" alt="" class="img-fluid"> Servings </span>
                                            </div>
@@ -106,13 +91,12 @@
                                                 </span>
                                                 <input type="text" class="form-control" name="" id="qtyBox" readonly="" value="0">
                                                 <span class="input-group-btn">
-                                                    
                                                     <button class="btn btn-default-add" id="add">+</button>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class=" mt-4">
-                                            <a name="" id="" class="btn btn-singleOrder" href="#" role="button">Place Order</a>
+                                            <a name="" id="" class="btn btn-singleOrder" role="button" data-toggle="modal" href="#orderModal">Place Order</a>
                                         </div>
                                     </div>
                                    
@@ -235,7 +219,7 @@
                                     </div>
                                     <!-- Post Meta -->
                                     <div class="shop-text">
-                                        <p><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
+                                        <p><a href="singleProduct.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -591,7 +575,7 @@
 
                         </div>
                     </div>
-
+                    <!-- end of all slide -->
                 </div>
             </div>
         </div>
@@ -639,8 +623,8 @@
                             <div class="social_links">
                                 <ul>
                                     <li><a href="#"> <i class="fab fa-facebook-f"></i> </a></li>
-                                    <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-                                    <li><a href="#"> <i class="fab fa-instagram"></i> </a></li>
+                                    
+                                    <li><a href="https://instagram.com/nahedrisfoods?igshid=1g3t80g85xw5s"> <i class="fab fa-instagram"></i> </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -663,12 +647,153 @@
     </footer>
     <!--/ footer end  -->
 
+    <!-- Order Modal-Dialog -->
+    <div class="order-modal modal fade" id="orderModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="arrow-back">
+                        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                   </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 mx-auto">
+                            <div class="modal-body">
+                               <form action="/" id="orderForm" method="get" novalidate>
+                                   <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="address" id="address" class="form-control" placeholder="Location Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <button class="modal-button">Order ID</button>
+                                                <input name="orderId" id="orderId" class="form-input" type="button" value="#456789098764">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <button class="modal-button">Item Name</button>
+                                                <input name="itemName" id="itemName" class="form-input" type="button" value="Ham Sandwich">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <button class="modal-button">Price</button>
+                                                <input name="itemPrice" id="itemPrice" class="form-input" type="button" value="$149.99">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <button class="modal-button">Tray Size</button>
+                                                  <select class="form-input" name="" id="">
+                                                        <option value="">Half Tray</option>
+                                                        <option value="">Full Tray</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <button class="modal-button">Quantity</button>
+                                                <select class="form-input" name="" id="">
+                                                      <option value="">1</option>
+                                                      <option value="">2</option>
+                                                      <option value="">3</option>
+                                                      <option value="">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                       
+                                     
+                                        <div class="col-md-12 ">
+                                            <p class="modal-text">Please note that delivery fee is not inclusive in the above fee. The delivery fee would be calculated based on address provided. </p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" value="submit" class="btn modal-submit">Submit</button>
+                                        </div>
+                                   </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Successful -->
+        <!-- Order Modal-Dialog -->
+        <div class="order-modal modal fade" id="orderSucessModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 text-center mx-auto">
+                                <div class="modal-body">
+                                    <img src="images/loaf-tick-1.svg" alt="">
+                                    <h5>Your order has been submitted successfully, <br> You would be contacted shortly</h5>
+                                    <a name="" id="" class="btn btn-lg btn-order-success" href="shop.html" role="button">Continue Shopping</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order UnSuccessful -->
+        <!-- Order Modal-Dialog -->
+        <div class="order-modal modal fade" id="orderFailedModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 text-center mx-auto">
+                                <div class="modal-body">
+                                    <img src="images/loaf-cross.svg" class="img-fluid" alt="">
+                                    <h5 class="mt-3">Sorry, your order could not be placed, <br> please try again</h5>
+                                    <!-- redirect -->
+                                    <a name="" id="" class="btn btn-lg btn-order-success" href="shop.html" role="button">Try again</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- JS here -->
- <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
+    <!-- Rrder js -->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/orderValidation.js"></script>
+    <!-- main -->
     <script src="js/main.js"></script>
 </body>
 
