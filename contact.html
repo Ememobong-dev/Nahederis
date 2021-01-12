@@ -64,7 +64,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-xl-6 slider-content">
-                        <div class="slider-logo">
+                        <div class="slider-logo text-center">
                             <img src="images/logo.png" alt="" class="img-fluid">
                         </div>
                         <div class="slider_text text-center">
@@ -84,28 +84,31 @@
                 <div class="col-md-6">
                     <div class="contact-text">
                         <span>Need a quote ?</span>
-                        <p>Contact me now to lets get you <br> your desired meal</p>
+                        <p>Contact me now, lets get you <br> your desired meal</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="contact_form_inner">
                         <h3 class="text-center">Send Me a Message</h3>
-                        <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="Fname" name="Fname" placeholder="First Name">
+                        <form action="#" method="get" id="contactForm" novalidate>
+                            <div class="row contact_form">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                   <textarea name="message" id="message" class="form-control" cols="30" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <button type="submit" value="submit" class="btn btn-lg btn-contact ">Send a message</button>
+                                 </div>
                             </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="Lname" name="Lname" placeholder="Last Name">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-12 form-group">
-                               <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Message"></textarea>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <button type="submit" value="submit" class="btn btn-lg btn-contact ">Send a message</button>
-                             </div>
+                          
                         </form>
                     </div>
                 </div>
@@ -180,12 +183,56 @@
     </footer>
     <!--/ footer end  -->
 
+        <!-- contact Successful -->
+        <!-- contact Modal-Dialog -->
+        <div class="contact-modal modal fade" id="contactSucessModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 text-center mx-auto">
+                                <div class="modal-body">
+                                    <img src="images/loaf-tick-1.svg" alt="">
+                                    <h5>Thanks for reaching out, <br> we will get back to you shortly</h5>
+                                    <a name="" id="" class="btn btn-lg btn-order-success" href="/" role="button">Back to home</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Unsuccessful -->
+        <!-- Contact Modal-Dialog -->
+        <div class="contact-modal modal fade" id="contactFailedModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 text-center mx-auto">
+                                <div class="modal-body">
+                                    <img src="images/loaf-cross.svg" class="img-fluid" alt="">
+                                    <h5 class="mt-3">Oops! Something went wrong, <br> please try again</h5>
+                                    <!-- redirect -->
+                                    <a name="" id="" class="btn btn-lg btn-order-success" href="contact.html" role="button">Try again</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- JS here -->
- <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    
+     <!--Order validation and contact validation-->
+     <script src="js/jquery.form.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
+     <script src="js/formValidations.js"></script> 
     <script src="js/main.js"></script>
 </body>
 

@@ -156,7 +156,7 @@
         alert('Press ' + (/Mac/i.test(navigator.platform) ? 'Cmd' : 'Ctrl') + '+D to bookmark this page.');
       }
 
-      return true;
+      return false;
     });
 
 

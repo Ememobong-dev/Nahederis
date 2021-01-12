@@ -8,7 +8,7 @@ $(document).ready(function(){
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
 
-    // validate orderForm form
+    // validate order Form
     $(function() {
         $('#orderForm').validate({
             rules: {
@@ -74,7 +74,69 @@ $(document).ready(function(){
                     }
                 })
             }
+        }),
+        $('#contactForm').validate({
+            rules: {
+                firstName: {
+                    required: true,
+                    minlength: 2
+                },
+                lastName: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                message: {
+                    required: true,
+                    minlength: 5
+                },
+                
+            },
+            messages: {
+                firstName: {
+                    required: "Kindly input your firstname",
+                    minlength: "your name must consist of at least 2 characters"
+                },
+                lastName: {
+                    required: "fill in your last name",
+                    minlength: "your last name must consist of at least 2 characters"
+                },
+                email: {
+                    required: "input your email, so we can contact you",
+                },
+                message: {
+                    required: "Yes!, send in your message, let's discuss",
+                }
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type: $('#contactForm').attr('method'),
+                    data: $(form).serialize(),
+                    url: $('#contactForm').attr('action'),
+                    success: function() {
+                        $('#contactForm :input').attr('disabled', 'disabled');
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $('#contactSucessModal').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#contactSucessModal').modal('show');
+                        })
+                        console.log('Submission occured perfectly');
+                    },
+                    error: function() {
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $('#contactFailedModal').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#contactFailedModal').modal('show');
+                        })
+                        console.log('An Error occured woefully');
+                    }
+                })
+            }
         });
+
     });
         
  })(jQuery)
