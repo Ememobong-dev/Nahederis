@@ -1355,19 +1355,22 @@ margin-bottom: 70px;
 }
 
 /* Order Dialogue */
-.order-modal .modal-dialog {
+.order-modal .modal-dialog,
+.contact-modal .modal-dialog{
   margin: 1rem;
   max-width: 100vw;
 }
 
 @media(min-width : 1200px) {
-  .order-modal .modal-dialog {
+  .order-modal .modal-dialog,
+  .contact-modal .modal-dialog {
     margin-left: 5rem;
     max-width: 80vw;
   }
 }
 
-.order-modal .modal-content {
+.order-modal .modal-content,
+.contact-modal .modal-content {
   padding: 50px 0;
   border-radius: 15px;
   border: 1px #ddd;
@@ -1375,18 +1378,21 @@ margin-bottom: 70px;
   box-shadow: 5px 4px 4px 4px #777474;
 }
 
-.order-modal .close-modal {
+.order-modal .close-modal,
+.contact-modal .close-modal {
   position: absolute;
   top: 35px;
   cursor: pointer;
   background-color: transparent;
 }
 
-.order-modal .close-modal:hover {
+.order-modal .close-modal:hover,
+.contact-modal .close-modal:hover {
   opacity: 0.5;
 }
 
-.order-modal .modal-content button {
+.order-modal .modal-content button,
+.contact-modal .modal-content button {
   cursor: pointer;
   width: 35%;
   padding:.375rem .75rem;
@@ -1400,11 +1406,13 @@ margin-bottom: 70px;
 
 }
 
-.order-modal .modal-content .modal-button {
+.order-modal .modal-content .modal-button,
+.contact-modal .modal-content .modal-button {
   width: 35%;
 }
 
-.order-modal .modal-content .modal-submit {
+.order-modal .modal-content .modal-submit,
+.contact-modal .modal-content .modal-submit {
   width: 50%;
   line-height: 2;
   border-radius: 0;
@@ -1440,7 +1448,8 @@ margin-bottom: 70px;
 
 
 @media(max-width: 398px) {
-  .order-modal .modal-content .modal-button {
+  .order-modal .modal-content .modal-button,
+  .contact-modal .modal-content .modal-button {
     font-size: 0.6rem;
     line-height: 2.5;
 
@@ -1452,7 +1461,8 @@ margin-bottom: 70px;
 }
 
 @media(max-width: 368px) {
-  .order-modal .modal-content .modal-button {
+  .order-modal .modal-content .modal-button,
+  .contact-modal .modal-content .modal-button {
     font-size: 0.6rem;
     line-height: 2;
   }
@@ -1465,13 +1475,16 @@ margin-bottom: 70px;
 }
 
 .order-modal .modal-content .modal-body p,
-.order-modal .modal-content .modal-body h5 {
+.order-modal .modal-content .modal-body h5,
+.contact-modal .modal-content .modal-body p,
+.contact-modal .modal-content .modal-body h5 {
   color: #F98169;
   font-weight: bold;
   margin-bottom: 50px;
 }
 
-.order-modal .modal-content .btn-order-success {
+.order-modal .modal-content .btn-order-success,
+.contact-modal .modal-content .btn-order-success {
   border-radius: 5px;
   background-color: #F98169;
   color: white;
