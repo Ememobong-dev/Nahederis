@@ -52,9 +52,9 @@ $(document).ready(function(){
             },
             submitHandler: function(form) {
                 $(form).ajaxSubmit({
-                    type:"POST",
+                    type: $('#orderForm').attr('method'),
                     data: $(form).serialize(),
-                    url:"",
+                    url: $('#orderForm').attr('action'),
                     success: function() {
                         $('#orderForm :input').attr('disabled', 'disabled');
                         $('#orderForm').fadeTo( "slow", 1, function() {
@@ -62,6 +62,7 @@ $(document).ready(function(){
                             $('.modal').modal('hide');
 		                	$('#orderSucessModal').modal('show');
                         })
+                        console.log('Submission occured perfectly');
                     },
                     error: function() {
                         $('#orderForm').fadeTo( "slow", 1, function() {
@@ -69,11 +70,12 @@ $(document).ready(function(){
                             $('.modal').modal('hide');
 		                	$('#orderFailedModal').modal('show');
                         })
+                        console.log('An Error occured woefully');
                     }
                 })
             }
-        })
-    })
+        });
+    });
         
  })(jQuery)
 });
