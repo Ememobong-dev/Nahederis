@@ -7,6 +7,22 @@
     }
 }
 
+.Inboxes-view {
+    display: none;
+}
+
+.Inboxes-view.active {
+    display: block;
+}
+
+.Inboxes--default {
+    display: block;
+}
+
+.Inboxes--default.remove{
+    display: none;
+}
+
 .new-alert {
     margin-bottom: 50px;
 }
@@ -97,6 +113,11 @@
     overflow: hidden;
 }
 
+#Inboxes .viewMessage{
+    margin-top: 30px;
+
+}
+
 .client-name {
     padding: 9px;
 }
@@ -121,6 +142,12 @@
     margin-top: 250px;
 }
 
+@media(max-width:1100px) {
+    #widgets{
+      margin-top: 130px;
+        bottom: 5px;
+    }
+}
 
 #widgets textarea {
     font-size: 1.3rem;
@@ -132,8 +159,8 @@
     color: #fff;
     border-radius: 10px;
     background: #651100;
-  }
-  
+}
+
 #widgets textarea:focus {
     -webkit-box-shadow: none;
     box-shadow: none;

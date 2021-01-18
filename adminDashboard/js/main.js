@@ -9,40 +9,35 @@
            $('.js-fullheight').css('height', $(window).height());
        });
 
-   };
-   fullHeight();
-
+   };fullHeight();
+   
   var burgerMenu = function() {
+        $('.dasboard-nav-toggle').on('click', function(event){
+            event.preventDefault();
+            var $this = $(this);
 
-       $('.dasboard-nav-toggle').on('click', function(event){
-           event.preventDefault();
-           var $this = $(this);
-
-           if ($('body').hasClass('offcanvas')) {
-               $this.removeClass('active');
-               $('body').removeClass('offcanvas');	
-           } else {
-               $this.addClass('active');
-               $('body').addClass('offcanvas');	
-           }
-       });
+            if ($('body').hasClass('offcanvas')) {
+                $this.removeClass('active');
+                $('body').removeClass('offcanvas');	
+            } else {
+                $this.addClass('active');
+                $('body').addClass('offcanvas');	
+            }
+        });
    };burgerMenu();
 
    // Click outside of offcanvass
    var mobileMenuOutsideClick = function() {
-
        $(document).click(function (e) {
-       var container = $("#dashboard-aside, .dasboard-nav-toggle");
-       if (!container.is(e.target) && container.has(e.target).length === 0) {
+            var container = $("#dashboard-aside, .dasboard-nav-toggle");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-           if ( $('body').hasClass('offcanvas') ) {
+                if ( $('body').hasClass('offcanvas') ) {
 
-               $('body').removeClass('offcanvas');
-               $('.dasboard-nav-toggle').removeClass('active');
-           
-           }
-           
-       }
+                    $('body').removeClass('offcanvas');
+                    $('.dasboard-nav-toggle').removeClass('active');
+                }
+            }
        });
    }; mobileMenuOutsideClick();
   
@@ -70,7 +65,6 @@
     document.getElementById('newSteps').innerHTML += newInput;  
     num++;
     }
-
 
 })(jQuery);
 
