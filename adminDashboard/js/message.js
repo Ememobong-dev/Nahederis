@@ -1,5 +1,3 @@
-// // get the current jqyery cdn
-
 (function($) {
 
     "use strict";
