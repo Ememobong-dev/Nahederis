@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nahedris Foods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../images/logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=muli">
+        <!-- CSS-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/fontawesome-free-5.0.1/css/fontawesome-all.css">
+        <!-- Main CSS-->
+        <link rel="stylesheet" href="css/styles.css">
+        
+    </head>
+
+<body>
+
+    <div id="dashboard-page">
+		<a href="#" class="dasboard-nav-toggle nav-toggler"><i></i></a>
+		<aside id="dashboard-aside" role="complementary" class="js-fullheight">
+            <div class="logo">
+                <a href="/"><img src="../images/dashboard_logo.png" alt=""></a>
+            </div>
+            <div class="lines">
+                <img src="../images/DashLine.png" alt="lines" class="img-fluid">
+                <img src="../images/DashLine.png" alt="lines" class="img-fluid">
+            </div>
+            
+			<nav class="dashboard-nav" role="navigation">
+				<ul>
+                    <li class="nav-item"><a href="homeDashboard.html"  class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="recipeDashboard.html"  class="nav-link">Recipes</a></li>
+                    <li class="nav-item active"><a href="productDashboard.html"  class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="menuDashboard.html"  class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="messagesDashboard.html"  class="nav-link">Messages</a></li>
+                </ul>
+				</ul>
+			</nav>
+
+			<div class="dashboard-footer">
+				<div class="mb-4">
+                    <ul class="logOut">
+                        <li><a href="signIn.html">Log out</a></li>
+                    </ul>
+				</div>
+			</div>
+		</aside> <!-- END dashboard-aside -->
+		<div id="dashboard--side">
+		
+            <section class="py-3">
+                <div class="dash_owner d-flex justify-content-between">
+                   <span class="mt-2">
+                       <a href="addProduct.html" class="text-default"> <i class="fa fa-plus" aria-hidden="true"></i>Add Product</a>
+                   </span>
+                    <h6 class=" mt-2 text-default">Naheema Sule</h6>
+                </div>
+            </section>
+
+            <section class="productDashboard">
+                <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="productDashboard__slider owl-carousel">
+                            <div class="productDashboard__slider-content" id="productDashboard-content">
+                                <!-- content-inner Slide One-->
+                                    <!-- rendered from js -->
+                            </div>
+
+                            <div class="productDashboard__slider-content"  id="productDashboard-content">
+                                <!-- content-inner Slide Two -->
+
+                                <!-- slide two ends -->
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </section>
+
+  
+
+		</div><!-- END dashboard--side -->
+	</div><!-- END dashboard-page -->
+	
+    
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid text-default">
+                           <h5 class="text-center">Are you sure you want to delete this Product? </h5>
+                           <div class="modal--btns">
+                                <button type="button" name="" id="" class="btn btn-default mr-3">Yes, delete</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close" name="" id="">No, go back</button>
+                           </div>
+    
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+	
+     <!-- JS here -->
+   <!-- bootstrap and jquery -->
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+   <!-- carousels -->
+   <script src="../js/owl.carousel.min.js"></script>
+   <script src="js/recipecarousel.js"></script>
+   <script src="js/productcarousel.js"></script>
+   <!-- image selection -->
+   <script src="js/selectImage.js"></script>
+   <!-- main js file for dashboard -->
+   <script src="js/main.js"></script>
+	
+</body>
+</html>
+
+

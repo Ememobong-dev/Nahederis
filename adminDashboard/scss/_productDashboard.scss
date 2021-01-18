@@ -1,0 +1,352 @@
+a {
+    color: white;
+}
+
+a:hover {
+    color: inherit;
+}
+button .btn:focus {
+    box-shadow: none;
+}
+.recipeDashboard {
+    padding-top: 0;
+}
+.productDashboard__slider-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    overflow-x: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  @media(max-width: 1024px) {
+    .productDashboard__slider-content  {
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media (min-width: 328px) and (max-width: 500px) {
+    .productDashboard__slider-content  {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media (max-width: 327px) {
+    .productDashboard__slider-content  {
+      grid-template-columns: auto;
+    }
+  }
+
+.productDashboard__slider-content--inner{
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 5px; 
+}
+
+.productDashboard__slider-content--inner .img-container{
+    position: relative;
+    z-index: 1; 
+}
+  
+.productDashboard__slider-content--inner .img-container img {
+    width: 100%; 
+}
+
+.productDashboard__slider-content--inner.slider {
+   margin-bottom: 5px; 
+}
+
+.productDashboard__slider-content--inner.slider.img-container {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 97px;
+    flex: 0 0 97px;
+    min-width: 97px;
+}
+
+.productDashboard__slider-content--inner.slider .productDashboard__slider-content--descript  {
+  padding: 5px; 
+} 
+
+.productDashboard__slider-content--inner.slider:last-of-type {
+    margin-bottom: 0; 
+}
+
+.btn-default {
+    background: #F98169;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.btn-default:hover {
+    color: #fff;
+}
+
+.btn-default:focus {
+    box-shadow: none;
+}
+
+.productDashboard__slider .owl-dots {
+  text-align: center; 
+}
+
+.productDashboard__slider .owl-dots .owl-dot{
+    display: inline-block; 
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
+.productDashboard__slider .owl-dots .owl-dot > span {
+  margin: 7px;
+  background:#F98169;
+  opacity: 0.4;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+
+}
+
+.productDashboard__slider .owl-dots .owl-dot:hover > span {
+  background:#F98169; 
+}
+
+.productDashboard__slider .owl-dots .owl-dot.active > span {
+  background:#F98169; 
+  opacity: 1.0;
+  border-radius: 30px !important;
+  -webkit-transition: 0.5s all ease-in-out !important;
+  -o-transition: 0.5s all ease-in-out !important;
+  transition: 0.5s all ease-in-out !important;
+}
+
+// Modal
+.modal-dialog{
+  margin: 1rem;
+  max-width: 1000vw;
+}
+
+@media(min-width : 1200px) {
+.modal-dialog {
+    max-width: 40vw;
+    margin: auto;
+    margin-top: 8rem;
+
+  }
+}
+.modal-content {
+  padding: 50px 0;
+  border-radius: 15px;
+  border: 1px #ddd;
+}
+
+.modal--btns {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.modal--btns button{
+  cursor: pointer;
+}
+
+.modal-backdrop.show{
+  opacity: .6
+}
+
+// Edit Products
+
+.editProduct {
+  padding-top: 50px;
+}
+
+.editProduct__name input,
+.editProduct__description textarea{
+  border: 1px solid #F98169;
+  padding: .9em;
+}
+
+.editProduct__name input:focus,
+.editProduct__description textarea:focus{
+  border: 3px solid #F98169;
+  box-shadow: none;
+}
+
+.editProduct__name h5,
+.editProduct__description h5{
+  color: #F98169;
+  font-size: 18px;
+  margin-left: 20px;
+  font-weight: bold;
+  
+}
+
+.editProduct__tray {
+  background: #F98169;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3;
+}
+
+.editProduct__tray--inputs button{
+  color: #F98169;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px #fff;
+
+}
+
+.editProduct__tray--inputs input {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px #fff;
+  color: #F98169;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.editProduct__tray--inputs input:focus {
+  outline: 1px solid red;
+} 
+
+
+.Neon {
+  font-family: sans-serif;
+  // font-size: 13px;
+  color: #F98169;
+  position: relative;
+  
+
+}
+.Neon * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Neon-input-dragDrop {
+  display: block;
+  width: 343px;
+  margin: 0 auto 25px auto;
+  padding: 25px;
+  color: #8d9499;
+  background: #fff;
+  border: 2px solid #F98169;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
+  -moz-transition: box-shadow 0.3s, border-color 0.3s;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.Neon input {
+  z-index: 999;
+  opacity: 0; 
+  width: 100px; 
+  height: 100px; 
+  position: absolute; 
+  right: 0px;
+  left: 0px; 
+  margin-right: auto; 
+  margin-left: auto;
+}
+
+.Neon-input-dragDrop .Neon-input-icon {
+  font-size: 12px;
+  margin-top: -10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.wrapper{
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 0;
+  background: #fff;
+  border: 2px solid #F98169;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  }
+  .wrapper.active{
+  border: none;
+  }
+  .wrapper div.image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid F98169;
+  }
+  .wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  }
+  .wrapper .icon{
+  font-size: 100px;
+  color: #F98169;
+  }
+  .wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color:  #0C3653;
+  }
+  .wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #F98169;
+  cursor: pointer;
+  display: none;
+  }
+  .wrapper.active:hover #cancel-btn i{
+  display: block;
+  }
+  .wrapper #cancel-btn i:hover{
+  color: #F98169;
+  }
+  .wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 18px;
+  color: #fff;
+  display: none;
+  background: #F98169;
+  }
+  .wrapper.active:hover .file-name{
+  display: block;
+  }
+ #custom-btn{
+  margin-top: 4px;
+  margin-bottom: 25px;
+  display: block;
+  // width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #F98169;
+  }

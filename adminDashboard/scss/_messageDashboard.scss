@@ -1,0 +1,173 @@
+
+.messageDashboard {
+    padding-top: 20px;
+
+    .message--heading h6{
+        font-weight: bold;
+    }
+}
+
+.new-alert {
+    margin-bottom: 50px;
+}
+
+.new-alert h5 {
+    font-weight: bold;
+    color: #F98169;
+}
+.newMessages {
+    margin: 0px;
+    height: 520px;
+    padding: 5px;
+    overflow-y: auto;
+    background: #F98169;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.newMessage-list {
+    margin: 0px;
+    height: 500px;
+    padding: 5px;
+    overflow-y: auto;
+    background: #F98169;
+    border-radius: 10px;
+    width: 100%;
+    // height: 95vh;
+  }
+
+
+.newMessage-box {
+    padding: 10px;
+    background:white;
+    -webkit-box-shadow: 0 4px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    top: 0;
+    position: relative; 
+    margin-bottom: 20px;
+    background: #651100;
+
+}
+
+.newMessage-box.active{
+    border: 1px solid #fff;
+}
+
+.newMessage-box:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+
+}
+
+.newMessage-box .newMessage-text *:last-child {
+  margin-bottom: 0; 
+}
+
+.newMessage-box .newMessage-text h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px; 
+  font-weight: bold;
+}
+
+
+// Inbox
+#chat-container {
+    display: grid;
+    grid: 
+    'conversation-list Inboxes' 3fr
+    'new-message-container Inbox' 78px
+    / 275px 1fr;
+    gap: 30px;
+    min-width: 800px;
+    max-width: 100%;
+    min-height: 660px;
+    width: 100%;
+    background: fff;
+    border-radius: 10px;
+}
+
+#Inboxes {
+    padding: 0px 20px;
+    background: #F98169;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.client-name {
+    padding: 9px;
+}
+
+.client-name h3 {
+    font-weight: bold;
+}
+
+.message-text {
+    padding: 9px 14px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#widgets {
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    margin-top: 250px;
+}
+
+
+#widgets textarea {
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding-left: 20px;
+    z-index: 0;
+    outline: none;
+    border: 2px #651100;
+    color: #fff;
+    border-radius: 10px;
+    background: #651100;
+  }
+  
+#widgets textarea:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.inbox_widget .input-group button {
+    position: absolute;
+    border: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0px;
+    top: 70%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50px !important;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #F98169;
+}
+
+.inbox_widget .input-group .btn-link {
+    right: 50px;
+}
+
+.inbox_widget .input-group .btn-plane {
+    right: 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
