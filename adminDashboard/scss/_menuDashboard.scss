@@ -1,0 +1,53 @@
+.menuDashboard{
+    padding-top: 70px;
+    .table {
+        color: #fff;
+        border-radius: 10px !important;
+        background-color: #F98169;
+        border: none !important;
+        border-top: none;
+    }
+    thead {
+    background-color: #F98169;
+    }
+}
+
+@media(min-width:700px) {
+    .table img {
+        width: 100px;
+    }
+}
+
+.dash_owner h6 {
+    font-weight: bold;
+}
+
+.dash_owner .file {
+    background: #F98169;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 15px;
+}
+
+.dash_owner .file input {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+
+}
+.dash_owner span a {
+    font-weight: bold;
+}
+.dash_owner span a.text-default:hover {
+    color: #F98169;
+}
+

@@ -874,10 +874,14 @@ a.btn-outline-ash:hover {
     width: 100%; 
 }
 
-.shop-product-content_inner .shop-descript #store-item-name a,
+.shop-product-content_inner .shop-descript .store-item-name a,
 .topProduct-content_inner .topProduct-descript .topProduct-name a{
   color: #0C3653;
   font-weight: bold;
+}
+
+.shop-product-content_inner .shop-descript .store-item-name a {
+  font-weight: bolder;
 }
 
 .shop-product-content_inner .shop-descript #store-item-name a:hover,

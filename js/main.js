@@ -41,7 +41,7 @@
       });
     });
 
-  $(document).ready(function(){
+    $(document).ready(function(){
 
     $('.shop-section-slider, .recipe-section-slider').owlCarousel({
       items: 1,
@@ -95,9 +95,7 @@
         },
        
       }
-  });
-
-  
+    });
 
     // Single page button 
     let addBtn = document.querySelector('#add');
@@ -119,9 +117,8 @@
       }
       
     });
-
-
-
+    // Mobile bookmark
+    addToHomescreen();
     
 });
 
@@ -158,12 +155,5 @@
 
       return false;
     });
-
-
-
-
-
-
- 
 
 })(jQuery);	
