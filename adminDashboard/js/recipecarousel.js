@@ -1,14 +1,14 @@
 var recipeDashboard = [
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Product", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
-    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"/Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
+    {btnDelete:"Delete Recipe", btnEdit:"Edit Recipe", avatar:"../../../Nahedris/images/img-3.png",},
 ]
 
 

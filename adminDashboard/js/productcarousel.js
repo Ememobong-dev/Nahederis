@@ -1,12 +1,12 @@
     var productDashboard = [
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-1.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-2.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-3.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-5.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-1.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-2.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-3.png",},
-        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"/Nahedris/images/tp-5.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-1.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-2.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-3.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-5.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-1.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-2.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-3.png",},
+        {btnDelete:"Delete Product", btnEdit:"Edit Product", avatar:"../../../Nahedris/images/tp-5.png",},
     ]
 
     document.querySelectorAll('#productDashboard-content')[0].innerHTML = productDashboard.map(shop => 

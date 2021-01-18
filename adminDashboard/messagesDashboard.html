@@ -61,9 +61,9 @@
                     <h5>3 new messages</h5>
                 </div>
                 <div id="chat-container">
-                    <div class="newMessages">
+                    <div class="newMessages" id="newMessages">
                         <div class="newMessage-list">
-                            <div class="d-flex newMessage-box active">
+                            <div class="d-flex newMessage-box">
                                 <div class="newMessage-text">
                                     <div class="d-flex justify-content-between">
                                         <h5 class="mr-3">Olushola Umoren</h5> <i class="fas fa-circle  text-default  "></i>
@@ -93,7 +93,8 @@
                         <!-- convo-list -->
                     </div>
         
-                    <div id="Inboxes">
+                    <!-- inbox view is hidden until a message is opened -->
+                    <div id="Inboxes" class="Inboxes-view">
                         <div class="client-message">
                             <div class="message-content">
                                 <div class="client-name">
@@ -119,13 +120,17 @@
                                             <button class="btn btn-plane" type="button"><i class="fas fa-paper-plane    "></i></button> 
                                         </span>
                                     </div>
-                                    <!-- /input-group -->
                                 </div>
                             </form>
                         </div>
                     </div>
-                    
-        
+                    <!-- inbox default is the default interface on load until a message is opened -->
+                    <div id="Inboxes" class="Inboxes--default">
+                        <img src="../images/undraw_Newsletter_re_wrob.svg" alt="" class="viewMessage img-fluid">
+                        <div class="text-center">
+                            <h3>Let's read your messages</h3>
+                        </div>
+                    </div>
                     <!-- chat container ends -->
                 </div>
             </section>
@@ -148,6 +153,8 @@
    <script src="js/productcarousel.js"></script>
    <!-- image selection -->
    <script src="js/selectImage.js"></script>
+   <!-- message bot -->
+   <script src="js/message.js"></script>
    <!-- main js file for dashboard -->
    <script src="js/main.js"></script>
 	

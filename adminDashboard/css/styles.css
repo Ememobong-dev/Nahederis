@@ -406,6 +406,22 @@ body.offcanvas #dashboard--side, body.offcanvas .nav-toggler {
   font-weight: bold;
 }
 
+.Inboxes-view {
+  display: none;
+}
+
+.Inboxes-view.active {
+  display: block;
+}
+
+.Inboxes--default {
+  display: block;
+}
+
+.Inboxes--default.remove {
+  display: none;
+}
+
 .new-alert {
   margin-bottom: 50px;
 }
@@ -485,6 +501,10 @@ body.offcanvas #dashboard--side, body.offcanvas .nav-toggler {
   overflow: hidden;
 }
 
+#Inboxes .viewMessage {
+  margin-top: 30px;
+}
+
 .client-name {
   padding: 9px;
 }
@@ -507,6 +527,13 @@ body.offcanvas #dashboard--side, body.offcanvas .nav-toggler {
   left: 0;
   right: 0;
   margin-top: 250px;
+}
+
+@media (max-width: 1100px) {
+  #widgets {
+    margin-top: 130px;
+    bottom: 5px;
+  }
 }
 
 #widgets textarea {
