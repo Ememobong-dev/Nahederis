@@ -1,7 +1,4 @@
-// // get the current jqyery cdn
-
 (function($) {
-
     "use strict";
 
     $(document).on('click', '.newMessage-list .newMessage-box', function(){
