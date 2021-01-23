@@ -44,17 +44,37 @@
 
    
     // Dashboard carousels
-    $('.recipeDashboard__slider, .productDashboard__slider').owlCarousel({
-    items: 1,
-    margin: 3,
-    loop: true,
-    dots: true,
-    autoplay: false,
-    autoplayTimeout: 2500,
-    pauseOnHover: true,
-    smartSpeed: 1000,
-    nav: false,
-    navText: ['<p>Prev</p> ', '<p>Next</p>']
+ 
+    $('.recipeDashboard-carousel, .productDashboard-carousel').owlCarousel({
+        items: 5,
+        margin: 5,
+        loop: true,
+        dots: true,
+        autoplay: false,
+        autoplayTimeout: 2500,
+        stopOnHover: true,
+        smartSpeed: 1000,
+        nav: false,
+        navText: ['<p>Prev</p> ', '<p>Next</p>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            325: {
+                items: 2
+            },
+
+            500: {
+                items:3
+            },
+            1024: {
+              items: 4,
+            },
+            1200: {
+                items: 5,
+            },
+         
+        }
     });
   
     //  recipe Add step

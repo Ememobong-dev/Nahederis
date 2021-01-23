@@ -1,75 +1,40 @@
-a {
-    color: white;
+.productDashboard {
+  padding-top: 0;
 }
 
-a:hover {
-    color: inherit;
-}
-button .btn:focus {
-    box-shadow: none;
-}
-.recipeDashboard {
-    padding-top: 0;
-}
-.productDashboard__slider-content {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 15px;
-    overflow-x: hidden;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  @media(max-width: 1024px) {
-    .productDashboard__slider-content  {
-      grid-template-columns: auto auto auto;
-    }
-  }
-
-  @media (min-width: 328px) and (max-width: 500px) {
-    .productDashboard__slider-content  {
-      grid-template-columns: auto auto;
-    }
-  }
-
-  @media (max-width: 327px) {
-    .productDashboard__slider-content  {
-      grid-template-columns: auto;
-    }
-  }
-
-.productDashboard__slider-content--inner{
+.productDashboard-carousel--inner{
     position: relative;
     z-index: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     margin-bottom: 5px; 
+    width: 100%;
 }
 
-.productDashboard__slider-content--inner .img-container{
+.productDashboard-carousel--inner .img-container{
     position: relative;
     z-index: 1; 
 }
   
-.productDashboard__slider-content--inner .img-container img {
+.productDashboard-carousel--inner .img-container img {
     width: 100%; 
 }
 
-.productDashboard__slider-content--inner.slider {
+.productDashboard-carousel--inner {
    margin-bottom: 5px; 
 }
 
-.productDashboard__slider-content--inner.slider.img-container {
+.productDashboard-carousel--inner .img-container {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 97px;
     flex: 0 0 97px;
     min-width: 97px;
 }
 
-.productDashboard__slider-content--inner.slider .productDashboard__slider-content--descript  {
+.productDashboard-carousel--inner .productDashboard-carousel--descript  {
   padding: 5px; 
 } 
 
-.productDashboard__slider-content--inner.slider:last-of-type {
+.productDashboard-carousel--inner :last-of-type {
     margin-bottom: 0; 
 }
 
@@ -93,32 +58,43 @@ button .btn:focus {
     box-shadow: none;
 }
 
-.productDashboard__slider .owl-dots {
-  text-align: center; 
+// Product and dashboard carousels
+.owl-carousel .item {
+  height: auto;
+  background: #fff;
+  // text-align: center;
+  margin: 1rem;
 }
 
-.productDashboard__slider .owl-dots .owl-dot{
-    display: inline-block; 
-    margin-top: 40px;
-    margin-bottom: -50px;
+.owl-carousel .item:last-of-type {
+  margin-bottom: 0; 
 }
 
-.productDashboard__slider .owl-dots .owl-dot > span {
+.owl-theme .owl-dots {
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: -50px;
+}
+
+.owl-theme .owl-dots .owl-dot > span {
   margin: 7px;
-  background:#F98169;
+  background: #F98169;
   opacity: 0.4;
   display: inline-block;
   width: 15px;
   height: 15px;
-  border-radius: 50%; 
-
+  border-radius: 50%;
 }
 
-.productDashboard__slider .owl-dots .owl-dot:hover > span {
-  background:#F98169; 
+.owl-theme .owl-dots .owl-dot:hover > span {
+  background: #F98169;
 }
 
-.productDashboard__slider .owl-dots .owl-dot.active > span {
+.owl-theme .owl-dots .owl-dot.active > span {
   background:#F98169; 
   opacity: 1.0;
   border-radius: 30px !important;
@@ -217,54 +193,6 @@ button .btn:focus {
 .editProduct__tray--inputs input:focus {
   outline: 1px solid red;
 } 
-
-
-.Neon {
-  font-family: sans-serif;
-  // font-size: 13px;
-  color: #F98169;
-  position: relative;
-  
-
-}
-.Neon * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.Neon-input-dragDrop {
-  display: block;
-  width: 343px;
-  margin: 0 auto 25px auto;
-  padding: 25px;
-  color: #8d9499;
-  background: #fff;
-  border: 2px solid #F98169;
-  text-align: center;
-  -webkit-transition: box-shadow 0.3s, border-color 0.3s;
-  -moz-transition: box-shadow 0.3s, border-color 0.3s;
-  transition: box-shadow 0.3s, border-color 0.3s;
-}
-.Neon input {
-  z-index: 999;
-  opacity: 0; 
-  width: 100px; 
-  height: 100px; 
-  position: absolute; 
-  right: 0px;
-  left: 0px; 
-  margin-right: auto; 
-  margin-left: auto;
-}
-
-.Neon-input-dragDrop .Neon-input-icon {
-  font-size: 12px;
-  margin-top: -10px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
 .wrapper{
   position: relative;
