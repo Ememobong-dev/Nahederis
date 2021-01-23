@@ -43,28 +43,77 @@
 
     $(document).ready(function(){
 
-    $('.shop-section-slider, .recipe-section-slider').owlCarousel({
-      items: 1,
-      margin: 8,
+
+      // Shop slider
+
+    $('.shop-section-slider').owlCarousel({
+      items: 2,
+      margin: 1,
       loop: true,
       dots: true,
       autoplay: false,
-      autoplayTimeout: 5500,
+      autoplayTimeout: 2500,
+      stopOnHover: true,
       smartSpeed: 1000,
       nav: true,
-      navText: ['<p>Prev</p> ', '<p>Next</p>']
-    });
+      navText: ['<p>Prev</p> ', '<p>Next</p>'],
+      responsive: {
+          0: {
+              items: 1
+          },
+          325: {
+              items: 2
+          },
+          500: {
+              items:3
+          },
+          1024: {
+            items: 4,
+          },
+       
+      }
+   });
+
+   $('.recipe-section-slider').owlCarousel({
+      items: 2,
+      margin: 1,
+      loop: true,
+      dots: true,
+      autoplay: false,
+      autoplayTimeout: 2500,
+      smartSpeed: 1000,
+      nav: true,
+      navText: ['<p>Prev</p> ', '<p>Next</p>'],
+      responsive: {
+        0: {
+            items: 1
+        },
+        325: {
+            items: 2
+        },
+        500: {
+            items:3
+        },
+        1024: {
+          items: 4,
+        },
+        1200: {
+          items: 5,
+        },
+      
+      },
+   });
 
     // Recipe carousel
 
-    $('.recipe-carousel').owlCarousel({
+    $('.topRecipe-carousel').owlCarousel({
       items: 1,
       margin: 15,
       loop: true,
       dots: true,
-      pauseOnHover: true,
       autoplay: true,
       autoplayTimeout: 5500,
+      autoplayHoverPause:true,
       smartSpeed: 1000,
       nav: false,
       navText: ['<p>Prev</p> ', '<p>Next</p>']
@@ -73,29 +122,43 @@
 
     $('.single-recipe-slider').owlCarousel({
       items: 3,
-      margin: 20,
+      margin: 1,
       loop: true,
       dots: true,
       autoplay: true,
-      autoplayTimeout: 3500, 
+      autoplayHoverPause:true,
       smartSpeed: 1000,
-      // center: true,
       nav: false,
       navText: ['<div class="arrow-back"><i class="fa fa-arrow-circle-left"></i</div>', '<div class="arrow-back"><i class="fa fa-arrow-circle-right"></i></div>'],
       responsive: {
-          0: {
-              items: 1
-          },
-          500: {
-              items:3
-          },
-          1024: {
-            items: 5,
-            nav: true
+        0: {
+            items: 1
         },
-       
-      }
+        325: {
+            items: 2
+        },
+        500: {
+            items:3
+        },
+        1024: {
+          items: 4,
+        },
+        1200: {
+          items: 5,
+          nav: true
+        },
+      
+      },
     });
+
+    var owl = $('.single-recipe-slider, .topRecipe-carousel');
+    var owlCarouselTimeout = 1000;
+
+      owl.on('mouseleave', function(){
+       owl.trigger('stop.owl.autoplay');
+       owl.trigger('play.owl.autoplay', [owlCarouselTimeout]);
+
+    })
 
     // Single page button 
     let addBtn = document.querySelector('#add');
