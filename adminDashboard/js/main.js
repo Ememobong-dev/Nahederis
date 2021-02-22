@@ -40,43 +40,29 @@
             }
        });
    }; mobileMenuOutsideClick();
-  
 
-   
-    // Dashboard carousels
- 
-    $('.recipeDashboard-carousel, .productDashboard-carousel').owlCarousel({
-        items: 5,
-        margin: 5,
-        loop: true,
-        dots: true,
-        autoplay: false,
-        autoplayTimeout: 2500,
-        stopOnHover: true,
-        smartSpeed: 1000,
-        nav: false,
-        navText: ['<p>Prev</p> ', '<p>Next</p>'],
-        responsive: {
-            0: {
-                items: 1
-            },
-            325: {
-                items: 2
-            },
+//    $('.dashboard-nav li a').click(function(e){
 
-            500: {
-                items:3
-            },
-            1024: {
-              items: 4,
-            },
-            1200: {
-                items: 5,
-            },
-         
-        }
-    });
-  
+//         $('.dashboard-nav li.active').removeClass('active');
+
+//         var $parent = $(this).parent();
+//         $parent.addClass('active');
+//         e.preventDefault();
+//    });
+
+   $(function() {
+       var current = location.pathname;
+        $('.dashboard-nav li a').each(function() {
+            var $this = $(this);
+            if($this.attr('href').indexOf(current) !== -1) {
+                $('.dashboard-nav li.active').removeClass('active');
+                var $parent = $('.dashboard-nav li.active').parent();
+                    $parent.addClass('active');
+                // $this.addClass('active');
+            }
+        });
+   });
+
     //  recipe Add step
     var num = 2;
     document.getElementById('addStep').addEventListener("click",addInput);
@@ -85,6 +71,9 @@
     document.getElementById('newSteps').innerHTML += newInput;  
     num++;
     }
+
+   var addIngr = document.querySelector('#addIngredient');
+   console.log(addIngr.value)
 
 })(jQuery);
 

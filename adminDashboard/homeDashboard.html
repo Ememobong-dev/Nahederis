@@ -20,10 +20,10 @@
 <body>
 
     <div id="dashboard-page">
-		<a href="#" class="dasboard-nav-toggle nav-toggler"><i></i></a>
+        <a href="#" class="dasboard-nav-toggle nav-toggler"><i></i></a>
 		<aside id="dashboard-aside" role="complementary" class="js-fullheight">
             <div class="logo">
-                <a href=""><img src="../images/dashboard_logo.png" alt=""></a>
+                <a href="/"><img src="../images/dashboard_logo.png" alt=""></a>
             </div>
             <div class="lines">
                 <img src="../images/DashLine.png" alt="lines" class="img-fluid">
@@ -32,7 +32,7 @@
             
 			<nav class="dashboard-nav" role="navigation">
 				<ul>
-                    <li class="nav-item active"><a href="homeDashboard.html"  class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="homeDashboard.html"  class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="recipeDashboard.html"  class="nav-link">Recipes</a></li>
                     <li class="nav-item"><a href="productDashboard.html"  class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="menuDashboard.html"  class="nav-link">Menu</a></li>
@@ -102,17 +102,36 @@
 
             <section class="home-messages">
                 <div class="container">
-                    <div class="message-Board">
-                        <div class="header-box">
-                            <h4 class="float-right"><a href="messagesDashboard.html">Go to messages <i class="fa fa-angle-right" aria-hidden="true"></i></a></h4>
-                        </div>
-                        <div class="Empty--message text-center">
-                            <div class="mx-auto"><img src="../images/2459468.png" class="img-fluid" alt=""> </div>
-                            <div><p>Sorry you have no new messages</p></div> 
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-box">
+                                <h5 class="float-right"><a href="messagesDashboard.html">Go to messages <i class="fa fa-angle-right"></i></a></h5>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                       
+                            <div class="home-messages-Inner">
+                                <div class="message-Board">
+                                
+                                    <div class="message-Board__box">
+                                        
+                                        <div class="Empty--message text-center">
+                                            <div class="mx-auto"><img src="../images/2459468.png" class="img-fluid" alt=""> </div>
+                                            <div><p>Sorry you have no new messages</p></div> 
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+                    </div>
+
+                   
                 </div>
-              
             </section>
 
 		</div><!-- END dashboard--side -->
