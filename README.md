@@ -1,2 +1,2 @@
 # Nahedris
-Nahedris is an online Kitchen Store majorly based in the US, but ooh well, be sure to get Nigeria delicacies.
+Nahedris Foods is a catering service in the USA owned by Adeyinka Naheema. The site is an online kitchen where people get to order for awesome treat, check out the site developed by reedtechng here : https://www.nahedrisfoods.com/
